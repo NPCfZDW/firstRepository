@@ -24,8 +24,33 @@
          </nav>
     </header>
 
-    <main></main>
+    <main>
+       
+        <table>
+             <tr>
+                <th>ID</th>
+                <th>Nazwa</th>
+                <th>Zakres</th>
+                <th>Minimalna_długość_ochronna</th>
+             </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </main>
 
     <footer></footer>
 </body>
 </html>
+<?php
+// łączenie z bazą danych
+$mysqli = new mysqli("localhost","root","","ryby");
+if ($mysqli -> connect_errno){
+    echo "failed to connect MySQL:" . $mysqli -> connect_eror;
+    exit();
+}
+// operacje na bazie danych
+
+// zakończenie operacji z bazą
+$mysqli -> close();
+?>
