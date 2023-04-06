@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="baza.php">
     <title>fishing World</title>
 </head>
 <body>
@@ -25,7 +26,8 @@
     </header>
 
     <main>
-       
+    
+        
         <table>
              <tr>
                 <th>ID</th>
@@ -42,15 +44,4 @@
     <footer></footer>
 </body>
 </html>
-<?php
-// łączenie z bazą danych
-$mysqli = new mysqli("localhost","root","","ryby");
-if ($mysqli -> connect_errno){
-    echo "failed to connect MySQL:" . $mysqli -> connect_eror;
-    exit();
-}
-// operacje na bazie danych
 
-// zakończenie operacji z bazą
-$mysqli -> close();
-?>
